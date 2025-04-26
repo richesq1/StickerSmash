@@ -1,8 +1,7 @@
 import { ScrollView, StyleSheet } from 'react-native';
-import { WeatherProvider } from '../../context/WeatherContext';
-import { WeatherStation } from '../../components/WeatherStation';
-import { WeatherStats } from '../../components/WeatherStats';
-import { colors, spacing } from '../../constants/theme';
+import { WeatherProvider } from '../context/WeatherContext';
+import { WeatherStation } from '../components/WeatherStation';
+import { WeatherStats } from '../components/WeatherStats';
 
 export default function HomeScreen() {
   return (
@@ -21,10 +20,10 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: '#ffffff', // Replace with your desired color or import colors
   },
   content: {
-    padding: spacing.large,
-    gap: spacing.large,
+    padding: 16, // Replace 16 with your desired padding value
+    gap: 16, // Replace 16 with your desired gap value
   },
 });
