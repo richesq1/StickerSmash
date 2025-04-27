@@ -10,7 +10,7 @@ interface WeatherContextType {
   clearAllData: () => void;
 }
 
-const WeatherContext = createContext<WeatherContextType | undefined>(undefined);
+export const WeatherContext = createContext<WeatherContextType | undefined>(undefined);
 
 export function WeatherProvider({ children }: { children: React.ReactNode }) {
   const initialData = [

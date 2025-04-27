@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { ThemedText } from '../components/ThemedText';
+import { ThemedText } from './ThemedText';
 import { colors, spacing } from '../constants/theme';
 import { useWeather } from '../context/WeatherContext';
 
@@ -16,28 +16,28 @@ export function WeatherStats() {
         <View style={styles.statItem}>
           <ThemedText style={styles.label}>Avg Temperature</ThemedText>
           <ThemedText style={styles.value}>
-            {stats.avgTemperature.toFixed(1)}°C
+            {`${stats.avgTemperature.toFixed(1)}°C`}
           </ThemedText>
         </View>
 
         <View style={styles.statItem}>
           <ThemedText style={styles.label}>Avg Humidity</ThemedText>
           <ThemedText style={styles.value}>
-            {stats.avgHumidity.toFixed(1)}%
+            {`${stats.avgHumidity.toFixed(1)}%`}
           </ThemedText>
         </View>
 
         <View style={styles.statItem}>
           <ThemedText style={styles.label}>Avg Pressure</ThemedText>
           <ThemedText style={styles.value}>
-            {stats.avgPressure.toFixed(1)} hPa
+            {`${stats.avgPressure.toFixed(1)} hPa`}
           </ThemedText>
         </View>
 
         <View style={styles.statItem}>
           <ThemedText style={styles.label}>Avg Wind Speed</ThemedText>
           <ThemedText style={styles.value}>
-            {stats.avgWindSpeed.toFixed(1)} km/h
+            {`${stats.avgWindSpeed.toFixed(1)} km/h`}
           </ThemedText>
         </View>
       </View>

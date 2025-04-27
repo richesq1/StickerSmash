@@ -88,7 +88,7 @@ export function WeatherStation() {
 const styles = StyleSheet.create({
   container: {
     padding: spacing.large,
-    paddingTop: spacing.xxlarge, // Add this line to increase top padding
+    paddingTop: spacing.xxlarge,
     backgroundColor: colors.card,
     borderRadius: 12,
     elevation: 2,
